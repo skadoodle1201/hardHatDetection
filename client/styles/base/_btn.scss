@@ -1,0 +1,39 @@
+//btn
+
+.link {
+  @include font-source-sans(0.75rem, 1.25rem, $font-md, $clr-primary, initial);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn-default {
+  width: 100%;
+  text-align: center;
+  &.Mui-disabled {
+    opacity: 0.5;
+    background-color: $clr-primary;
+    color: $clr-white;
+  }
+}
+
+.btn-solid {
+  padding: 1rem 1.25rem !important;
+  border-radius: 0.75rem !important;
+  box-shadow: none !important;
+}
+
+.btn {
+  .icon-copy,
+  .icon-camera {
+    font-size: 1.6rem;
+    margin-right: 0.3rem;
+  }
+}
+
+button {
+  > .MuiTouchRipple-root {
+    span {
+      background-color: rgba(0, 0, 0, 0.14) !important;
+    }
+  }
+}

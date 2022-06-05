@@ -1,0 +1,31 @@
+//bs-edit-form
+.bs-edit-form {
+  padding: 2.5rem 3.75rem;
+
+  .ef-head {
+    margin-bottom: 1.875rem;
+
+    p {
+      font-size: 1rem;
+      line-height: 1.625rem;
+    }
+  }
+
+  h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.06rem;
+    line-height: 1.75rem;
+  }
+
+  .bs-form {
+    .form-wrap {
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+@include mq-below($mobile) {
+  .bs-edit-form {
+    padding: 1.5rem 1.25rem 1.25rem 1.25rem;
+  }
+}

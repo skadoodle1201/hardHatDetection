@@ -1,0 +1,68 @@
+//bs-banner
+
+.bs-banner {
+  position: relative;
+  min-height: calc(100vh - 8.25rem);
+  padding-top: 6.25rem;
+  padding-bottom: 2rem;
+
+  .banner-info {
+    max-width: 20.93rem;
+  }
+
+  .container {
+    width: 57.1875rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@include mq-below($mobile) {
+  .bs-banner {
+    min-height: inherit;
+    padding: 5.5625rem 1.25rem 2.5rem 1.25rem;
+
+    .container {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .banner-info {
+      max-width: 20.93rem;
+      margin-bottom: 5.4375rem;
+
+      h2 {
+        font-size: 1.43rem;
+        line-height: 2.06rem;
+        margin-bottom: 0;
+      }
+
+      p {
+        display: none;
+      }
+    }
+  }
+}
+
+@include mq-between($tablet-min, $tablet-max) {
+  .bs-banner {
+    padding: 7.75rem 0 5rem 0;
+    min-height: inherit;
+
+    .container {
+      max-width: 20.93rem;
+      flex-direction: column;
+    }
+
+    .banner-info {
+      margin-bottom: 3.75rem;
+
+      h2 {
+        font-size: 2rem;
+        line-height: 2.75rem;
+      }
+    }
+  }
+}

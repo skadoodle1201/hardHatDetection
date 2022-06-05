@@ -1,0 +1,16 @@
+//mod-info-title
+.mod-info-title {
+  .i-title {
+    margin-bottom: 0.75rem;
+  }
+
+  .mod-icon-text {
+    margin-top: 0;
+    &.typ2 {
+      .icon {
+        font-size: 1.25rem;
+        margin-right: 0.35rem;
+      }
+    }
+  }
+}

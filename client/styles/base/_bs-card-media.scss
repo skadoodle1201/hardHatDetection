@@ -1,0 +1,25 @@
+.card-block {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  .img {
+    object-fit: contain;
+    height: "161px";
+  }
+  .text-block {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    .text {
+      font-size: 16px;
+      font-family: "Manrope-SemiBold" !important;
+      color: $clr-white;
+      line-height: 1.38;
+      width: 198px;
+    }
+  }
+}
+
+
+

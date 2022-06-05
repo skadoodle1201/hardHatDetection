@@ -1,0 +1,10 @@
+//mod-info
+.mod-info {
+  p {
+    margin-bottom: 1.25rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

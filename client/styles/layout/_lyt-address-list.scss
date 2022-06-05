@@ -1,0 +1,13 @@
+//lyt-address-list
+.lyt-address-list {
+  max-width: 20.93rem;
+  margin: 0 auto;
+
+  .al-item {
+    margin-bottom: 0.8125rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

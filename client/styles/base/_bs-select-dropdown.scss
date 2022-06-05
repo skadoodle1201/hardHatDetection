@@ -1,0 +1,32 @@
+//bs-select-dropdown
+.bs-select-dropdown {
+  border-radius: 0.25rem !important;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.16) !important;
+
+  .MuiMenuItem-root {
+    @include font-source-sans(1.25em, 1.43rem, $font-md, $clr-black, capitalize);
+    font-family: $font-medium;
+    padding: 0.875rem 1.06rem;
+
+    &.Mui-selected {
+      background-color: transparent;
+      position: relative;
+      background-color: transparent !important;
+
+      &:after {
+        content: "\e91c";
+        font-family: "icomoon" !important;
+        font-size: 1.2rem;
+        color: $clr-primary;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 1rem;
+      }
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.04) !important;
+      }
+    }
+  }
+}

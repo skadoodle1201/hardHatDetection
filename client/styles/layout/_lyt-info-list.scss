@@ -1,0 +1,26 @@
+//lyt-info-list
+.lyt-info-list {
+  .info-card-list {
+    margin-bottom: 1.375rem;
+
+    .item {
+      margin-bottom: 1.25rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .bs-form {
+    .form-group {
+      margin-bottom: 0;
+      padding: 1.375rem 0;
+      border-bottom: 1px solid $clr-border;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}

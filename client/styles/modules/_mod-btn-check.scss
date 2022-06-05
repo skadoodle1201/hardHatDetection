@@ -1,0 +1,43 @@
+//mod-btn-check
+.mod-btn-check {
+  .progress-wrap,
+  .success-wrap {
+    display: none;
+  }
+
+  .progress-wrap {
+    .spinner {
+      display: inline-flex;
+      width: 1.2rem;
+      margin-right: 0.3rem;
+    }
+  }
+
+  .success-wrap {
+    .icon-tick {
+      font-size: 1.2rem;
+      display: inline-flex;
+      margin-right: 0.3rem;
+    }
+  }
+
+  &.typ-checking {
+    .default-wrap {
+      display: none;
+    }
+
+    .progress-wrap {
+      display: flex;
+    }
+  }
+
+  &.typ-success {
+    .default-wrap {
+      display: none;
+    }
+
+    .success-wrap {
+      display: flex;
+    }
+  }
+}

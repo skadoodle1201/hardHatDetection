@@ -1,0 +1,40 @@
+// Media Queries
+
+@mixin mq-below($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin mq-between($lower, $upper) {
+  @media only screen and (min-width: $lower) and (max-width: $upper) {
+    @content;
+  }
+}
+
+@mixin mq-above($breakpoint) {
+  @media only screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+// font styles
+
+@mixin font-source-sans($size: false, $lh: false, $weight: false, $colour: false, $tt: false) {
+  font-family: $font1;
+  @if $size {
+    font-size: $size;
+  }
+  @if $colour {
+    color: $colour;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+  @if $tt {
+    text-transform: $tt;
+  }
+}

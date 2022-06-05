@@ -1,0 +1,55 @@
+//bs-otp
+.bs-otp {
+  text-align: center;
+
+  .cm-link {
+    font-size: 1.0625rem;
+    line-height: 1.6875rem;
+  }
+
+  .cursor-pointer-resend{
+    cursor: pointer;
+  }
+
+  .bs-otp-input {
+    display: flex;
+    justify-content: center;
+    margin-top: 4.625rem;
+    margin-bottom: 12.25rem;
+  }
+
+  .title-wrap {
+    margin-bottom: 0.75rem;
+  }
+
+  .sub-title-wrap {
+    p {
+      margin-bottom: 0.625rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .btn-mobile-show {
+    display: none;
+  }
+
+  .o-action-helper-text {
+    margin-top: 0.3125rem;
+  }
+}
+
+@include mq-below($mobile) {
+  .bs-otp {
+    .btn-mobile-show {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .btn-desktop-show {
+      display: none;
+    }
+  }
+}

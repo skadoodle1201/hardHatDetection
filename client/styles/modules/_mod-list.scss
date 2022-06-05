@@ -1,0 +1,67 @@
+//mod-list
+.mod-list {
+  padding-left: 1.5rem;
+
+  .item {
+    position: relative;
+    margin-bottom: 0.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      content: "_";
+      font-size: 1rem;
+      color: $clr-bullets;
+      position: absolute;
+      left: -1rem;
+      top: -0.3rem;
+    }
+
+    h6 {
+      margin-bottom: 0;
+    }
+  }
+
+  &.typ-no-bullets {
+    padding-left: 0;
+
+    .item {
+      &:before {
+        content: none;
+      }
+    }
+  }
+
+  &.typ-numeric {
+    .item {
+      counter-increment: section;
+
+      &:before {
+        content: counter(section) ". ";
+        font-size: 0.875rem;
+        line-height: 1.43rem;
+        color: $clr-bullets;
+        top: 0.1rem;
+        left: -1.4rem;
+      }
+    }
+
+    .mod-list {
+      &.typ-roman {
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  &.typ-roman {
+    .item {
+      counter-increment: section-inner;
+
+      &:before {
+        content: counter(section-inner, lower-roman) ") ";
+      }
+    }
+  }
+}

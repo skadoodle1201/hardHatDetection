@@ -1,0 +1,50 @@
+//bs-modal-info
+.bs-modal-info {
+  padding: 1.75rem 2.75rem;
+
+  .btn-default {
+    width: 80%;
+  }
+
+  .btn-solid {
+    margin-bottom: 0.75rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .bs-icon-text {
+    .btn-solid {
+      margin-top: 0;
+    }
+  }
+
+  &.typ2 {
+    padding: 2rem 0 3.5rem 0;
+
+    .btn-solid {
+      width: 100%;
+    }
+
+    .bs-pan-details {
+      .btn-solid {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@include mq-below($mobile) {
+  .bs-modal-info {
+    .cm-image-placeholder {
+      width: 8.125rem;
+      height: 8.125rem;
+    }
+
+    &.typ2 {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+//lyt-doc
+.lyt-doc {
+  padding-bottom: 2.5rem;
+
+  .d-header {
+    text-align: center;
+    margin-bottom: 1.875rem;
+
+    h2 {
+      margin-bottom: 0.6875rem;
+    }
+
+    p {
+      max-width: 19.875rem;
+      margin: 0 auto;
+    }
+  }
+
+  .bs-icon-text {
+    max-width: 16.75rem;
+    margin: 0 auto;
+  }
+
+  .d-body {
+    margin-bottom: 5rem;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .lyt-doc {
+    .d-footer {
+      margin-bottom: 4rem;
+    }
+  }
+}

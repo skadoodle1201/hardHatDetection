@@ -1,0 +1,17 @@
+//mod-checklist
+.mod-checklist {
+  .c-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.625rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .icon {
+    font-size: 1rem;
+    margin-right: 0.625rem;
+  }
+}

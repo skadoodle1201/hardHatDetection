@@ -1,0 +1,40 @@
+//tpl-single-page
+
+.tpl-single-page {
+  padding-top: 7.375rem;
+
+  .bs-header {
+    .lang-wrap {
+      display: none;
+    }
+  }
+
+  &.typ-center {
+    .bs-header {
+      justify-content: center;
+    }
+  }
+}
+
+@include mq-below($mobile) {
+  .tpl-single-page {
+    padding-top: 7.5rem;
+
+    .bs-header {
+      justify-content: center;
+    }
+
+    &.typ-fluid-container {
+      .cm-container {
+        max-width: initial;
+        padding: 0 1.25rem;
+      }
+    }
+  }
+}
+
+@include mq-between($tablet-min, $tablet-max) {
+  .tpl-single-page {
+    padding-top: 10.56rem;
+  }
+}

@@ -1,0 +1,27 @@
+//bs-new-address
+.bs-new-address {
+  .btn-add-new {
+    margin: 2.25rem auto 2.5rem auto;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      font-size: 1.6rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .form-title {
+    margin-bottom: 0.25rem;
+  }
+
+  .na-title-wrap {
+    margin-bottom: 1.875rem;
+  }
+
+  &.typ-form {
+    .form-title {
+      margin-top: 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+//bs-user-profile
+.bs-user-profile {
+  text-align: center;
+  max-width: 12.125rem;
+  margin: 0 auto;
+
+  .mod-avatar {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+
+  .text-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .user-info {
+    margin-bottom: 1.25rem;
+    position: relative;
+  }
+
+  .btn-icon {
+    font-size: 1.4rem;
+    color: $clr-secondary-base;
+    position: absolute;
+    top: -0.4rem;
+    right: -0.8rem;
+  }
+}

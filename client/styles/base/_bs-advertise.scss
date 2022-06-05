@@ -1,0 +1,30 @@
+//bs-advertise
+.bs-advertise {
+  position: relative;
+  height: 10.06rem;
+  margin-bottom: 2.5rem;
+
+  .img-wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .info-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    margin-bottom: 0;
+    width: 15.25rem;
+  }
+
+  .ad-text {
+    @include font-source-sans(1.31rem, 1.8125rem, $font-semibold, $clr-white, initial);
+    font-family: $font-smbold;
+  }
+}

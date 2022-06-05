@@ -1,0 +1,39 @@
+.mod-icon-text {
+  .icon {
+    color: $clr-pallet-5;
+    font-size: 1.3rem;
+  }
+
+  .text {
+    @include font-source-sans(1rem, 1.75rem, bold, $clr-pallet-5, uppercase);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Manrope-ExtraBold";
+  }
+
+  &.typ2 {
+    display: flex;
+    align-items: center;
+    margin-top: 1.25rem;
+
+    .icon {
+      font-size: 2.25rem;
+      color: $clr-primary;
+      margin-right: 0.75rem;
+    }
+
+    .text {
+      @include font-source-sans(0.875rem, 1.25rem, $font-md, $clr-primary, initial);
+      font-family: "Manrope-Medium";
+    }
+  }
+}
+
+@include mq-below($mobile) {
+  .mod-icon-text {
+    .text {
+      font-family: "Manrope-Bold";
+    }
+  }
+}

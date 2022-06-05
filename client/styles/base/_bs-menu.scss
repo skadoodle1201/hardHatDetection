@@ -1,0 +1,79 @@
+//bs-menu
+
+.bs-menu {
+  .MuiPaper-root {
+    border-radius: 0;
+    padding: 0;
+    width: 18.5rem;
+  }
+
+  .MuiList-root {
+    padding: 0;
+  }
+
+  .MuiMenuItem-root,
+  .MuiListItem-root {
+    @include font-source-sans(1.125rem, 1.25rem, $font-regular, $clr-black, capitalize);
+    padding: 1rem 1.25rem;
+    position: relative;
+    cursor: pointer;
+
+    .icon {
+      font-size: 1.4rem;
+      color: $clr-white;
+      position: absolute;
+      right: 1.25rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 1.25rem;
+      right: 1.25rem;
+      bottom: 0;
+      height: 1px;
+      background-color: $clr-border;
+    }
+    &:hover {
+      .icon {
+        color: $clr-menu-hover;
+      }
+    }
+
+    &.Mui-selected {
+      background-color: transparent;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.04);
+      }
+
+      .icon {
+        color: $clr-pallet-1;
+      }
+    }
+  }
+
+  &.typ-modal {
+    margin: 0 auto;
+    max-width: 20.93rem;
+
+    .MuiPaper-root {
+      width: 20.93rem;
+      margin: 0;
+    }
+  }
+}
+
+@include mq-below($mobile) {
+  .bs-menu {
+    .MuiMenuItem-root {
+      padding: 1.3rem 1.25rem;
+    }
+
+    &.typ-drawer {
+      padding-bottom: 3rem !important;
+    }
+  }
+}

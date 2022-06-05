@@ -1,0 +1,48 @@
+//lyt-tnc
+.lyt-tnc {
+  .t-head {
+    text-align: center;
+    max-width: 65%;
+    margin: 0 auto 3rem;
+  }
+
+  .bs-check-list {
+    margin-bottom: 2.93rem;
+    border-bottom: 1px solid $clr-border;
+
+    &:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+  }
+
+  .t-body {
+    margin-bottom: 3.75rem;
+  }
+
+  .t-footer {
+    max-width: 20.93rem;
+    position: fixed;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .cm-link {
+    margin-bottom: 0.4375rem;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .lyt-tnc {
+    .t-footer {
+      right: 1.25rem;
+      left: 1.25rem;
+    }
+    .t-head {
+      max-width: initial;
+    }
+  }
+}

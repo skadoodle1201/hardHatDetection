@@ -1,0 +1,33 @@
+//mod-promo-success
+
+.mod-promo-success {
+  display: flex;
+  align-items: center;
+  background-color: $clr-bg;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.25rem;
+
+  .icon-wrap {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-right: 1rem;
+  }
+
+  .info-wrap {
+    .info-label {
+      @include font-source-sans(0.75rem, 0.85rem, $font-regular, $clr-base, capitalize);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .info-value {
+      @include font-source-sans(1rem, 1.2rem, $font-md, $clr-black, uppercase);
+    }
+  }
+
+  .icon-check {
+    font-size: 1.3rem;
+    color: $clr-pallet-1;
+    margin-left: auto;
+  }
+}

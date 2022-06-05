@@ -1,0 +1,35 @@
+//bs-info-text
+.bs-info-text {
+  .it-head {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .it-body {
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+
+  .MuiTypography-body2 {
+    .MuiLink-root {
+      font-size: 0.875rem;
+      line-height: 1.43rem;
+    }
+  }
+}
+
+@include mq-below($mobile) {
+  .bs-info-text {
+    .it-body {
+      max-height: 82vh;
+    }
+  }
+}
+
+@include mq-between($tablet-min, $tablet-max) {
+  .bs-info-text {
+    .it-body {
+      max-height: 88vh;
+    }
+  }
+}

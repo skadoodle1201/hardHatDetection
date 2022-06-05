@@ -1,0 +1,16 @@
+//bs-custom-modal
+.bs-custom-modal {
+  .MuiPaper-root {
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16) !important;
+    border-radius: 0 !important;
+    max-width: 20.93rem;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    -ms-overflow-style: none !important; /* IE and Edge */
+    scrollbar-width: none !important; /* Firefox */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

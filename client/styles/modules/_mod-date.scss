@@ -1,0 +1,63 @@
+//mod-date
+.mod-date {
+  position: relative;
+
+  .date-digit {
+    @include font-source-sans(1.75rem, 1.5rem, $font-md, $clr-base, initial);
+    font-family: "Manrope-Bold";
+  }
+
+  .date-month {
+    @include font-source-sans(1rem, 1.3rem, $font-md, $clr-base, uppercase);
+    font-family: "Manrope-Bold";
+    margin: 0.75rem auto 0.75rem;
+  }
+
+  .date-day {
+    @include font-source-sans(0.875rem, 1.375rem, $font-md, $clr-base, capitalize);
+    font-family: $font-medium;
+  }
+
+  .date-wrap {
+    text-align: center;
+    border: 1px solid $clr-turnary-base;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1.25rem;
+  }
+
+  .radio-input {
+    &:not(old) {
+      width: 0;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      position: absolute;
+      left: -99999px;
+
+      + .radio-label {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        cursor: pointer;
+      }
+
+      &:checked {
+        + .radio-label {
+          + .date-wrap {
+            border-color: $clr-primary;
+            background-color: $clr-pallet-13;
+
+            .date-digit,
+            .date-month,
+            .date-day {
+              color: $clr-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}

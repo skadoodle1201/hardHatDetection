@@ -1,0 +1,75 @@
+//bs-datalist
+.bs-datalist {
+  .data-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.43rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .link {
+      color: $clr-primary;
+    }
+  }
+
+  &.typ-border {
+    .data-label,
+    .data-value {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+
+    .data-label {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        font-size: 1rem;
+      }
+    }
+
+    .data-item {
+      margin-bottom: 0;
+      border-bottom: 1px solid $clr-border2;
+      padding: 0.875rem 0;
+
+      &:first-child {
+        border-top: 1px solid $clr-border2;
+      }
+    }
+  }
+
+  &.typ-review {
+    .data-item {
+      align-items: flex-start;
+      padding: 1rem 0;
+
+      &:first-child {
+        border-top: none;
+      }
+    }
+
+    .data-value {
+      text-align: right;
+    }
+
+    .data-label {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .cm-strike {
+    margin-left: 0.5rem;
+  }
+
+  .more-info-text {
+    @include font-source-sans(0.75rem, 0.875rem, $font-md, $clr-base, initial);
+    font-family: $font-medium;
+    max-width: 13rem;
+    margin-top: 0.1875rem;
+  }
+}

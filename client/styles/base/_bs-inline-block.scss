@@ -1,0 +1,65 @@
+.inline-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .info {
+    font-size: 12px;
+    font-weight: 500;
+    text-align: right;
+    color: #3857ff;
+  }
+  .lebel {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+  }
+  .grey {
+    color: #666;
+  }
+  .left {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    color: #666;
+  }
+}
+
+.dialog-content{
+  padding: 30px;
+  padding-left: 42px;
+  padding-right: 42px;
+}
+
+.divider {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.divider-review {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.dialog-title {
+  text-align: center;
+  font-size: 16px;
+}
+.close-btn-block {
+  position: absolute;
+  right: 16px;
+  top: 20px;
+}
+
+.review-Btn{
+  margin-top: 16px;
+  padding: 1rem 1.75rem;
+  border-radius: .75rem;
+}
+.mb-10{
+  margin-bottom: 10px;
+}
+.mt-5{
+  margin-top: 20px;
+}
+.fs-20{
+  font-size: 20px;
+}

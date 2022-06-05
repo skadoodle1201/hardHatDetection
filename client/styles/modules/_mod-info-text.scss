@@ -1,0 +1,39 @@
+//mod-info-text
+.mod-info-text {
+  text-align: center;
+
+  .icon {
+    font-size: 9.375rem;
+    color: $clr-primary;
+    margin-bottom: 0.8rem;
+    display: inline-block;
+  }
+
+  .text {
+    max-width: 8.75rem;
+    margin: 0 auto;
+    color: $clr-black;
+  }
+
+  &.typ-lg {
+    
+    .icon {
+        font-size: 7.5rem;
+        margin-bottom: 1rem;
+      }
+
+    .text {
+      max-width: 10.75rem;
+    }
+
+  }
+
+  &.typ-success {
+
+    .icon {
+      margin-bottom: 1.875rem;
+      font-size: 7.5rem;
+    }
+    
+  }
+}

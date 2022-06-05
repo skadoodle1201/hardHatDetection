@@ -1,0 +1,61 @@
+//lyt-detail-form
+.lyt-detail-form {
+  max-width: 20.93rem;
+  margin: 0 auto;
+
+  .df-head {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .df-head-start {
+    text-align: start;
+    margin-bottom: 4rem;
+  }
+
+  .title-wrap-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &.typ2 {
+    .form-action {
+      margin-top: 7.5rem;
+    }
+  }
+
+  .btn-mobile-show {
+    display: none;
+  }
+
+  &.typ-fixed-deposite {
+    .df-head {
+      margin-bottom: 2.625rem;
+    }
+  }
+}
+
+@include mq-below($mobile) {
+  .lyt-detail-form {
+    max-width: initial;
+    width: 100%;
+    .btn-mobile-show {
+      display: inline-flex;
+    }
+
+    .btn-desktop-show {
+      display: none;
+    }
+
+    .title-wrap {
+      justify-content: flex-start;
+    }
+  }
+}

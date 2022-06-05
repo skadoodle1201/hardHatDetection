@@ -1,0 +1,84 @@
+//tpl-progress-page
+.tpl-progress-page {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+
+  .bs-header {
+    .lang-wrap {
+      display: none;
+    }
+  }
+
+  .bs-steps {
+    display: inline-flex;
+  }
+
+  &.step1 {
+    .mod-progress {
+      .progress-bar {
+        width: 16.67%;
+      }
+    }
+  }
+
+  &.step2 {
+    .mod-progress {
+      .progress-bar {
+        width: 33.33%;
+      }
+    }
+  }
+
+  &.step3 {
+    .mod-progress {
+      .progress-bar {
+        width: 49.99%;
+      }
+    }
+  }
+
+  &.step4 {
+    .mod-progress {
+      .progress-bar {
+        width: 66.65%;
+      }
+    }
+  }
+
+  &.step5 {
+    .mod-progress {
+      .progress-bar {
+        width: 83.33%;
+      }
+    }
+  }
+
+  &.step6 {
+    .mod-progress {
+      .progress-bar {
+        width: 100%;
+      }
+    }
+  }
+
+  &.typ-no-header {
+    .bs-header {
+      display: none;
+    }
+  }
+}
+
+@include mq-below($mobile) {
+  .tpl-progress-page {
+    padding-top: 7.575rem;
+
+    .cm-container {
+      max-width: initial;
+      padding: 0 1.25rem;
+    }
+
+    &.typ-no-header {
+      padding-top: 4.575rem;
+    }
+  }
+}

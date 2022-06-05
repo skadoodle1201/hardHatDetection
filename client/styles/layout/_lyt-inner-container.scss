@@ -1,0 +1,28 @@
+//lyt-inner-container
+.lyt-inner-container {
+  padding: 0;
+  max-width: 20.93rem;
+  margin: 0 auto;
+
+  .bs-datalist {
+    .data-item {
+      &:first-child {
+        border-top: none;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .bs-icon-text {
+    .info-wrap {
+      margin-bottom: 2.1875rem;
+    }
+  }
+
+  .btn-default {
+    width: 100%;
+  }
+}

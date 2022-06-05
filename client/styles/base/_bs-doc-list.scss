@@ -1,0 +1,39 @@
+//bs-doc-list
+.bs-doc-list {
+  .label {
+    margin-bottom: 1rem;
+  }
+
+  .dl-img-wrap {
+    border-radius: 0.375rem;
+    width: 4.7rem;
+    height: 3.06rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .list-item {
+    display: flex;
+    align-items: center;
+
+    .dl-img-wrap {
+      margin-right: 1rem;
+    }
+  }
+
+  .dl-item {
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .dl-wrap {
+    margin-bottom: 2.5rem;
+  }
+}

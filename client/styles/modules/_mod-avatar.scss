@@ -1,0 +1,28 @@
+//mod-avatar
+.mod-avatar {
+  position: relative;
+
+  .media-wrap {
+    width: 5.25rem !important;
+    height: 5.25rem !important;
+    background-color: $clr-pallet-12 !important;
+
+    .MuiSvgIcon-root {
+      display: none;
+    }
+  }
+
+  &.typ-verified {
+    &:before {
+      content: "\e916";
+      font-family: "icomoon" !important;
+      font-size: 1.125rem;
+      color: $clr-primary;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -0.5rem;
+      z-index: 1;
+    }
+  }
+}

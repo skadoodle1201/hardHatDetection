@@ -1,0 +1,49 @@
+//lyt-form
+.lyt-form {
+  .f-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .toggle-center{
+    align-items: center !important;
+  }
+
+  .switch-wrap {
+    .MuiFormControlLabel-root {
+      margin-right: 0;
+    }
+
+    .MuiSwitch-root {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+
+  .mod-address {
+    margin-top: 1.75rem;
+  }
+
+  .bs-form {
+    margin-top: 2.5rem;
+  }
+
+  .title-wrap {
+    h4 {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &.typ-title {
+    h3 {
+      margin-bottom: 0.25rem;
+    }
+
+    .switch-wrap {
+      .MuiSwitch-root {
+        margin-bottom: 4px;
+      }
+    }
+  }
+}

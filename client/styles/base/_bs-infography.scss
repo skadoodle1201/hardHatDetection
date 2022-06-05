@@ -1,0 +1,45 @@
+//bs-infography
+
+.bs-infography {
+  padding-top: 3.75rem;
+  text-align: center;
+
+  .info-cont {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+
+  .info-head {
+    max-width: 27.188rem;
+    margin: 0 auto;
+  }
+
+  &.typ-inverse {
+    .info-head {
+      h3,
+      p {
+        color: $clr-white;
+      }
+    }
+  }
+}
+
+@include mq-below($mobile) {
+  .bs-infography {
+    .info-head {
+      max-width: 19rem;
+    }
+
+    img {
+      width: 85%;
+    }
+  }
+}
+
+@include mq-between($tablet-min, $tablet-max) {
+  .bs-infography {
+    .info-head {
+      padding: 0 1rem;
+    }
+  }
+}

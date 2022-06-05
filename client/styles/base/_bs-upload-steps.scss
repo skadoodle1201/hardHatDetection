@@ -1,0 +1,36 @@
+//bs-upload-steps
+.bs-upload-steps {
+  padding: 1.625rem;
+
+  .us-head {
+    text-align: center;
+    margin-bottom: 2.625rem;
+  }
+
+  .us-title {
+    @include font-source-sans(0.9375rem, 1.3125rem, $font-md, $clr-pallet-15, initial);
+    font-family: $font-medium;
+  }
+
+  .step-item {
+    margin-bottom: 2.1875rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .step-title {
+    margin-bottom: 0.6875rem;
+  }
+
+  .step-desc {
+    margin-bottom: 1.1875rem;
+  }
+
+  .us-footer {
+    text-align: center;
+    margin-top: 3.75rem;
+    margin-bottom: 5rem;
+  }
+}

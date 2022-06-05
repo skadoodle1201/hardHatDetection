@@ -1,0 +1,68 @@
+//bs-info-form
+.bs-info-form {
+  .if-label {
+    @include font-source-sans(1rem, 1.5rem, 600, $clr-black, initial);
+    font-family: $font-smbold;
+  }
+
+  .label-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .switch-wrap {
+    .MuiFormControlLabel-root {
+      margin-right: 0;
+    }
+
+    .MuiSwitch-root {
+      margin: 0;
+    }
+  }
+
+  .item-list {
+    .item {
+      border-bottom: 1px solid $clr-border;
+      padding: 1.75rem 0;
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .info-text {
+    max-width: 16rem;
+    margin-top: 0.5rem;
+  }
+
+  .if-body {
+    margin-bottom: 2.5rem;
+  }
+
+  .bs-icon-text {
+    padding: 0 2rem;
+
+    .info-head {
+      margin-top: 0;
+    }
+
+    .info-wrap {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include mq-below($tablet-max) {
+  .bs-info-form {
+    .item-list {
+      .item {
+        &:first-child {
+          border-top: 1px solid $clr-border;
+          padding-top: 1.75rem;
+        }
+      }
+    }
+  }
+}

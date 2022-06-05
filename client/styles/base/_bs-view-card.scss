@@ -1,0 +1,40 @@
+//bs-view-card
+.bs-view-card {
+  max-width: 20.93rem;
+
+  .img-wrap {
+    margin-bottom: 2.325rem;
+    padding: 0 1rem;
+  }
+
+  .info-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .item {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .vc-label {
+    margin-bottom: 0.25rem;
+  }
+
+  .vc-info-text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.625rem;
+  }
+}
+
+@include mq-below($tablet-max) {
+  .bs-view-card {
+    .img-wrap {
+      max-width: 16rem;
+      margin: 0 auto 2rem;
+      padding: 0;
+    }
+  }
+}

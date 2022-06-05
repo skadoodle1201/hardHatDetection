@@ -1,0 +1,152 @@
+//bs-upload-card
+.bs-upload-card {
+  background-color: $clr-white;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 18px 0 rgba(134, 134, 134, 0.16);
+  padding: 1.875rem;
+  position: relative;
+
+  .uc-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .btn-solid {
+      max-width: 11.625rem;
+    }
+
+    .btn {
+      font-size: 0.875rem;
+      line-height: 1.1875rem;
+      font-family: $font-smbold;
+      text-transform: initial;
+    }
+  }
+
+  .img-wrap {
+    width: 8.31rem;
+    height: 6.43rem;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    background-color: $clr-bg;
+  }
+
+  .img-flex {
+    div:first-child {
+      display: flex !important;
+      justify-content: center !important;
+      height: inherit;
+    }
+  }
+
+  .uc-title {
+    @include font-source-sans(1.125rem, 1.5rem, $font-md, $clr-black, capitalize);
+    font-family: $font-smbold;
+    margin-bottom: 0.625rem;
+  }
+
+  .uc-desc {
+    @include font-source-sans(1rem, 1.625rem, $font-md, $clr-pallet-18, initial);
+    font-family: $font-medium;
+  }
+
+  .uc-close {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+
+    .icon {
+      font-size: 1.3rem;
+    }
+  }
+
+  .uc-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.625rem;
+
+    .info-wrap {
+      max-width: 60%;
+    }
+  }
+
+  &.typ-uploaded {
+    box-shadow: none;
+
+    .img-wrap {
+      width: 5.31rem;
+      height: 5.31rem;
+    }
+
+    .uc-body {
+      justify-content: initial;
+      margin-bottom: 0;
+
+      .info-wrap {
+        margin-left: 1.5rem;
+      }
+    }
+
+    .uc-footer {
+      display: none;
+    }
+
+    .uc-close {
+      display: inline-flex;
+    }
+  }
+}
+
+@include mq-below($mobile) {
+  .bs-upload-card {
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+
+    .uc-body {
+      flex-direction: column;
+      margin-bottom: 0.7rem;
+
+      .img-wrap {
+        width: 100%;
+        margin-bottom: 1rem;
+        height: 8rem;
+      }
+
+      .info-wrap {
+        max-width: initial;
+        width: auto;
+        padding: 0 0.75rem;
+      }
+    }
+
+    .uc-footer {
+      .btn-solid {
+        max-width: 8.25rem;
+      }
+    }
+
+    &.typ-uploaded {
+      .img-wrap {
+        width: 4.68rem;
+        height: 4.68rem;
+        margin-bottom: 0;
+      }
+
+      .uc-body {
+        flex-direction: row;
+
+        .info-wrap {
+          max-width: 60%;
+          margin-left: 0.5rem;
+        }
+      }
+
+      .uc-title {
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+}

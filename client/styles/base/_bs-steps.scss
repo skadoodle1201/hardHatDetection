@@ -1,0 +1,24 @@
+//bs-steps
+.bs-steps {
+  .step-dots {
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 6px;
+    height: 6px;
+    background-color: $clr-pallet-10;
+    border-radius: 100%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@include mq-above($xl-desktop) {
+  .bs-steps {
+    .step-dots {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}

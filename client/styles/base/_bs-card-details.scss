@@ -1,0 +1,30 @@
+//bs-card-details
+.bs-card-details {
+  .img-wrap {
+    margin-bottom: 2rem;
+
+    img {
+      display: block;
+    }
+  }
+
+  .bs-datalist {
+    .data-item {
+      &:first-child {
+        border-top: none;
+      }
+    }
+  }
+
+  .info-wrap {
+    margin-bottom: 2rem;
+  }
+
+  .action-wrap {
+    text-align: center;
+  }
+
+  .helper-text {
+    margin-bottom: 1.5rem;
+  }
+}

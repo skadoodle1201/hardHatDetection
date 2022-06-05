@@ -1,0 +1,88 @@
+//lyt-appointment
+.lyt-appointment {
+  position: relative;
+
+  .a-header {
+    margin-bottom: 3.5rem;
+  }
+
+  .a-body {
+    margin-bottom: 2.5rem;
+  }
+
+  .a-footer {
+    border-top: 1px solid $clr-border;
+    padding-top: 1.75rem;
+  }
+
+  .address-wrap {
+    margin-bottom: 2.5rem;
+
+    .a-title {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  .verification-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.875rem 0;
+    border-top: 1px solid $clr-border;
+    border-bottom: 1px solid $clr-border;
+    margin: 0 2rem 1.875rem;
+  }
+
+  .bs-rating {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+
+    h6 {
+      max-width: 10rem;
+      margin: 0 auto 0.8125rem;
+    }
+  }
+
+  &.typ-booked {
+    .a-body {
+      margin-bottom: 3.75rem;
+    }
+
+    .a-footer {
+      border: none;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+@include mq-below($mobile) {
+  .lyt-appointment {
+    .a-footer {
+      padding-bottom: 3.5rem;
+    }
+  }
+}
+
+@include mq-below($tablet-max) {
+  .lyt-appointment {
+    .bs-rating {
+      position: relative;
+      top: auto;
+      right: auto;
+      text-align: center;
+      margin-bottom: 4rem;
+      h6 {
+        max-width: initial;
+        margin: 0 0 0.8125rem 0;
+      }
+    }
+
+    &.typ-booked {
+      .a-footer {
+        padding-bottom: 0;
+      }
+    }
+  }
+}

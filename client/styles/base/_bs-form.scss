@@ -1,0 +1,265 @@
+//bs-form
+
+.bs-form {
+  .form-group {
+    margin-bottom: 1.8rem;
+  }
+
+  .form-action {
+    .btn-default {
+      width: 100%;
+      text-align: center;
+      padding: 1rem 1.25rem;
+      border-radius: 0.75rem;
+      box-shadow: none;
+
+      &.Mui-disabled {
+        opacity: 0.5;
+        background-color: $clr-primary;
+        color: $clr-white;
+      }
+    }
+  }
+
+  .MuiInput-input {
+    @include font-source-sans(1.25rem, 1.4rem, $font-md, $clr-black, initial);
+    padding: 4px 0 5px;
+    font-family: "Manrope-Medium";
+
+    &::placeholder {
+      @include font-source-sans(1.25rem, 1.4rem, $font-md, $clr-turnary-base, initial);
+      font-family: "Manrope-Medium";
+    }
+  }
+
+  .MuiInputLabel-root {
+    @include font-source-sans(1.25rem, 1.4rem, $font-regular, $clr-turnary-base, initial);
+    font-family: "Manrope-Medium";
+    top: 0.2rem;
+    &[data-shrink="true"],
+    &.typ-shrink {
+      color: $clr-base;
+      font-size: 1rem;
+      line-height: 1.2rem;
+      top: 0;
+    }
+  }
+
+  .MuiFormHelperText-root {
+    @include font-source-sans(0.8rem, 1rem, $font-md, $clr-secondary-base, initial);
+    font-family: "Manrope-Medium";
+    margin-top: 0.5rem;
+  }
+
+  .MuiTypography-root {
+    @include font-source-sans(1.25rem, 1.4rem, $font-md, $clr-secondary-base, initial);
+    &.cm-link {
+      @include font-source-sans(0.875rem, 1.43rem, $font-medium, $clr-primary, capitalize);
+      text-decoration: none;
+      &.typ-dark {
+        color: $clr-pallet-9;
+        font-family: $font-smbold;
+      }
+    }
+  }
+
+  .MuiButtonBase-root,
+  .MuiInputBase-root {
+
+    .icon-close{
+      font-size: 1.3rem;
+      color: $clr-secondary-base;
+    }
+
+    .icon-question {
+      font-size: 1.4rem;
+      color: $clr-secondary-base;
+    }
+
+    .icon-verify,
+    .icon-hide,
+    .icon-view {
+      font-size: 1.3rem;
+      color: $clr-pallet-1;
+    }
+
+    .icon-alert {
+      font-size: 1.3rem;
+      color: $clr-pallet-5;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .meta-text {
+    @include font-source-sans(0.75rem, 1.25rem, $font-md, $clr-bullets, initial);
+  }
+
+  .form-more-links {
+    margin-bottom: 2.5rem;
+
+    .meta-text {
+      text-align: center;
+    }
+
+    &.typ-info {
+      margin-top: 0.8rem;
+      margin-bottom: 3rem;
+
+      .meta-text {
+        display: flex;
+        justify-content: center;
+
+        .icon {
+          font-size: 1.2rem;
+          margin-right: 0.2rem;
+        }
+      }
+    }
+  }
+
+  .centered-field {
+    .MuiInputLabel-root {
+      right: 0;
+      margin: 0 auto;
+      transform-origin: top center;
+    }
+
+    .MuiFormHelperText-root {
+      text-align: center;
+    }
+
+    .MuiInputAdornment-root {
+      position: absolute;
+      top: 46%;
+      transform: translateY(-50%);
+      right: 0;
+    }
+
+    &.typ-lg {
+      .MuiInput-input {
+        font-size: 2rem;
+        line-height: 2.75rem;
+
+        &::placeholder {
+          font-size: 2rem;
+          line-height: 2.75rem;
+        }
+      }
+    }
+  }
+
+  .MuiFormControl-root {
+    width: 100%;
+
+    .MuiInputBase-root {
+      &:before {
+        border-color: $clr-turnary-base;
+      }
+
+      &:after,
+      &:before {
+        border-width: 1px;
+      }
+
+      &:hover {
+        &:not(.Mui-disabled) {
+          &:before {
+            border-bottom: 1px solid $clr-turnary-base;
+          }
+        }
+      }
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  .input-group {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    padding-left: 2rem;
+
+    .icon-flag {
+      width: 1.5rem;
+      height: 1.5rem;
+      display: inline-flex;
+      position: absolute;
+      left: 0;
+      top: 1.3rem;
+    }
+  }
+
+  .btn-listen {
+    margin-top: 0.7rem;
+    margin-left: 1.1rem;
+  }
+
+  .btn-listen-wrap {
+    margin-top: 0.7rem;
+  }
+
+  .input-group-controlled {
+    width: 100% !important;
+
+    input {
+      &:focus,
+      &:visited {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .MuiInputAdornment-root {
+    .MuiButtonBase-root {
+      position: relative;
+      right: -0.6rem;
+
+      &.input-visible {
+        right: -0.4rem;
+      }
+    }
+  }
+
+  .action-link-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .btn-listen-wrap {
+    margin-top: 0.7rem;
+  }
+
+  .btn-listen {
+    margin-top: auto;
+  }
+
+  .form-sub-title {
+    @include font-source-sans(1rem, 1.25rem, $font-bold, $clr-black, initial);
+    font-family: "Manrope-Bold";
+    margin: 2.5rem 0 1.25rem 0;
+  }
+
+  .mod-helper-info {
+    margin-bottom: 7.31rem;
+  }
+}
+
+// Next JS Error Colour Fixes - Do Not Remove / Override w/o Regression Tests
+.form-wrap {
+  .form-group {
+    .Mui-error {
+      color: #ec1e30;
+    }
+  }
+}
+
+@include mq-below($mobile) {
+  .bs-form {
+    .form-group {
+      margin-bottom: 2.2rem;
+    }
+  }
+}

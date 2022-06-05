@@ -1,0 +1,35 @@
+//lyt-mpin
+.lyt-mpin {
+  .form-action {
+    button {
+      margin-bottom: 1.25rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .bs-icon-text {
+    .info-cont {
+      margin: 0 auto;
+      max-width: 50%;
+    }
+  }
+}
+
+@include mq-below($mobile) {
+  .lyt-mpin {
+    .bs-icon-text {
+      .info-wrap {
+        .info-head {
+          margin-bottom: 0.25rem;
+        }
+      }
+
+      .info-cont {
+        max-width: initial;
+      }
+    }
+  }
+}

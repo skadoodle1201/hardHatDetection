@@ -1,0 +1,32 @@
+//bs-info-card
+.bs-info-card {
+  border: 1px solid $clr-border;
+  border-radius: 1.0625rem;
+  padding: 1.25rem;
+
+  .ic-head {
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cm-link {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  .bs-datalist {
+    .data-item {
+      margin-bottom: 0.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .data-value {
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+//lyt-grid
+
+.lyt-grid {
+  .grid-item {
+    height: 37.625rem;
+    overflow: hidden;
+
+    .section {
+      height: 100%;
+    }
+
+    .bs-section {
+      height: 100%;
+    }
+
+    .bs-infography {
+      height: calc(100% - 3.75rem);
+      position: relative;
+
+      .info-cont {
+        position: absolute;
+        bottom: -0.3rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: 1;
+        }
+      }
+    }
+
+    &:nth-child(5n + 1) {
+      background-color: $clr-pallet-8;
+    }
+
+    &:nth-child(5n + 2) {
+      background-color: $clr-pallet-9;
+    }
+
+    &:nth-child(5n + 3) {
+      background-color: $clr-pallet-2;
+    }
+
+    &:nth-child(5n + 4) {
+      background-color: $clr-pallet-3;
+    }
+
+    &:nth-child(5n + 5) {
+      background-color: $clr-pallet-4;
+    }
+  }
+}
+
+@include mq-between($tablet-min, $tablet-max) {
+  .lyt-grid {
+    .grid-item {
+      &:not(:first-child) {
+        height: 28rem;
+      }
+    }
+  }
+}
+
+@include mq-below($mobile) {
+  .lyt-grid {
+    .grid-item {
+      height: 28rem;
+    }
+  }
+}

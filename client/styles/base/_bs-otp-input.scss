@@ -1,0 +1,149 @@
+//bs-otp-input
+.bs-otp-input {
+  position: relative;
+
+  .otp {
+    margin: 0 -0.5rem;
+
+    > div {
+      width: 3.49rem !important;
+      display: inline-flex !important;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  // FIX: Additional Spacing Issue in OTP Fields
+  .input-element {
+    margin-right: 0.7375rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  input {
+    width: 100% !important;
+    height: 4.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid $clr-turnary-base;
+    box-shadow: none;
+    font-size: 1.625rem;
+    line-height: 2rem;
+    margin: 0 0.5rem;
+
+    &:focus-visible {
+      outline: none;
+      box-shadow: none;
+    }
+
+    &:focus {
+      border-color: $clr-primary;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .error-info {
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: none;
+  }
+
+  &.error {
+    input {
+      border-color: $clr-pallet-5;
+    }
+
+    .error-info {
+      display: block;
+    }
+  }
+
+  .rule {
+    @include font-source-sans(0.875rem, 1.25rem, $font-md, $clr-secondary-base, initial);
+    font-family: $font-medium;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      font-size: 1.2rem;
+      color: $clr-pallet-14;
+      display: none;
+      margin-right: 0.2rem;
+    }
+
+    &.error {
+      color: $clr-pallet-5;
+    }
+
+    &.success {
+      color: $clr-pallet-14;
+
+      .icon {
+        display: inline-flex;
+      }
+    }
+  }
+
+  &.typ-pin {
+    input {
+      border-radius: 0;
+      border-width: 0 0 1px 0;
+      height: 2.3rem;
+    }
+
+    .otp {
+      justify-content: space-between;
+    }
+
+    .typ-shrink {
+      margin-bottom: 0.8rem;
+    }
+
+    .helper-text {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      .rule {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@include mq-below($mobile) {
+  .bs-otp-input {
+    input {
+      height: 4.3rem;
+    }
+
+    &.typ-pin {
+      .helper-text {
+        margin-top: 0.5rem;
+      }
+
+      .input-element {
+        input {
+          padding: 0 0.3rem;
+
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+
+    .input-element {
+      margin-right: 0.1375rem;
+    }
+  }
+}

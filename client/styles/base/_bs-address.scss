@@ -1,0 +1,102 @@
+//bs-address
+.bs-address {
+  position: relative;
+
+  .radio-input {
+    &:not(old) {
+      width: 0;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      position: absolute;
+      left: -99999px;
+
+      + .radio-label {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        cursor: pointer;
+      }
+
+      &:checked {
+        + .radio-label {
+          + .card {
+            border-color: $clr-primary;
+            background-color: $clr-pallet-13;
+
+            .check-icon {
+              color: $clr-primary;
+
+              &:before {
+                content: "\e910";
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .card {
+    background-color: $clr-bg;
+    border-radius: 0.25rem;
+    padding: 1.25rem;
+    padding-left: 3rem;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid $clr-bg;
+
+    .check-icon {
+      font-size: 1.5rem;
+      color: $clr-secondary-base;
+      position: absolute;
+      left: 0.8rem;
+      top: 1.3rem;
+      transition: all 0.3s ease;
+    }
+
+    .card-title {
+      @include font-source-sans(1rem, 1.375rem, $font-medium, $clr-black, capitalize);
+      font-family: $font-smbold;
+      margin-bottom: 0.43rem;
+    }
+
+    .card-desc {
+      @include font-source-sans(1rem, 1.625rem, $font-medium, $clr-base, initial);
+      font-family: $font-medium;
+      margin-bottom: 0.5625rem;
+    }
+  }
+
+  &.typ-error {
+    .card {
+      border-color: $clr-pallet-5;
+      padding-left: 1.25rem;
+      background-color: transparent;
+    }
+
+    .error-text {
+      display: flex;
+      align-items: center;
+      font-family: $font-medium;
+      line-height: 1.4rem;
+
+      .icon {
+        font-size: 1.4rem;
+        margin-right: 0.2rem;
+      }
+    }
+  }
+
+  &.typ-card {
+    .card {
+      padding-left: 1.25rem;
+      border-color: $clr-border;
+      background-color: transparent;
+      border-radius: 0.5rem;
+    }
+  }
+}

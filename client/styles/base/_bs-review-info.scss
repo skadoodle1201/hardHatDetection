@@ -1,0 +1,20 @@
+//bs-review-info
+.bs-review-info {
+  .ri-head {
+    margin-bottom: 2rem;
+  }
+
+  .info-wrap {
+    .item {
+      margin-bottom: 2.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .ri-body {
+    margin-bottom: 3.125rem;
+  }
+}

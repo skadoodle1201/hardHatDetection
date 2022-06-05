@@ -1,0 +1,50 @@
+//bs-header
+
+.bs-header {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  background: transparent;
+
+  .logo-wrap {
+    display: inline-flex;
+    max-width: 6.5rem;
+  }
+
+  .btn-menu {
+    margin: 0;
+    padding: 0;
+    color: $clr-base;
+    font-size: 1rem;
+    font-size: 400;
+    padding: 0;
+
+    .icon {
+      font-size: 1.5rem;
+      color: $clr-base;
+      display: inline-block;
+      margin-right: 0.2rem;
+    }
+  }
+
+  .bs-steps {
+    display: none;
+  }
+}
+
+@include mq-below($mobile) {
+  .bs-header {
+    padding: 1.25rem;
+    padding-top: 2.1875rem;
+
+    .logo-wrap {
+      max-width: 6rem;
+    }
+  }
+}

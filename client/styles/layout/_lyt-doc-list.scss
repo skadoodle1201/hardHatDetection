@@ -1,0 +1,10 @@
+//lyt-doc-list
+.lyt-doc-list {
+  .list-item {
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

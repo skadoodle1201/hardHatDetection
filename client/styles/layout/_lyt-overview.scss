@@ -1,0 +1,81 @@
+//lyt-overview
+.lyt-overview {
+  .o-head {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .o-body {
+    max-width: 54rem;
+    margin: 0 auto;
+    column-count: 2;
+    column-gap: 2.5rem;
+
+    .o-grid-item {
+      margin-bottom: 2rem;
+      width: 100%;
+      display: inline-block;
+    }
+  }
+
+  .bs-application-download {
+    position: fixed;
+    z-index: 2;
+    bottom: 2rem;
+    right: 2rem;
+  }
+}
+
+@include mq-below($tablet-max) {
+  .lyt-overview {
+    .o-body {
+      column-count: 1;
+      column-gap: 0;
+
+      .o-grid-item {
+        margin-bottom: 2rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .bs-application-download {
+      position: relative;
+      bottom: auto;
+      right: auto;
+    }
+  }
+}
+
+@include mq-between($tablet-min, $tablet-max) {
+  .lyt-overview {
+    .bs-application-download {
+      max-width: initial;
+      width: 25rem;
+      margin: 4rem auto 2rem;
+    }
+  }
+}
+
+@include mq-below($mobile) {
+  .lyt-overview {
+    .o-body {
+      padding: 0 1rem;
+
+      .o-grid-item {
+        width: 100%;
+      }
+    }
+
+    .o-footer {
+      margin-top: 4.5rem;
+      padding-bottom: 8.125rem;
+    }
+
+    .bs-application-download {
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import "~/styles/base/variables";
+
+.wcMain {
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+  right: 1rem;
+  bottom: 1rem;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  .wcMainWrapper {
+    flex: 1;
+    padding: 1rem 1.25rem;
+  }
+
+  .wcMainContent {
+    flex: 1;
+    margin: 0px auto;
+    min-height: 250px;
+    max-width: 27.81rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .wcMainFooter {
+    display: flex;
+    margin: 0px auto;
+    align-items: center;
+    max-width: 27.81rem;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    button {
+      width: 100%;
+      text-align: center;
+      padding: 1rem 1.25rem;
+      border-radius: 0.75rem;
+      box-shadow: none;
+      margin-bottom: 1.25rem;
+    }
+  }
+}

@@ -1,0 +1,159 @@
+//lyt-configure-card
+.lyt-credit-card {
+  align-items: 'center';
+  margin-bottom: 2rem;
+  .cc-head {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    .info-head-title {
+      font-size: 15px;
+      font-weight: bold;
+      .info-head-color {
+        color: #ff0049;
+      }
+    }
+    .info-wrap {
+
+   .info-head {
+        margin: 1.5625rem 0 0.45rem;
+
+      }
+    }
+  }
+
+  .cc-body {
+    max-width: 51.3125rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .cc-grid-item{
+      .inline-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 32px 20px 30px 20px;
+        .left {
+          color: $clr-grey;
+          font-size: 15px;
+          font-weight: 600;
+        }
+        .right {
+          font-size: 18px;
+          font-weight: bold;
+        }
+        .right-info {
+          font-size: 12px;
+          padding-left: 5px;
+        }
+      }
+      .divider {
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      .inline-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .left {
+          font-size: 14px;
+          font-weight: bold;
+        }
+        .right {
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+      .info-text {
+        font-size: 14px;
+        color: $clr-secondary-base;
+        padding-top: 6px;
+        text-align: left;
+        font-weight: 500;
+      }
+
+      .key-propositions {
+        &-block { display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        .title {
+          font-size: 14px;
+          font-weight: 500;
+          font-family: "Manrope-SemiBold" !important;
+          text-align: left;
+          color: $clr-base;
+        }}
+       &-items {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          .list-item {
+            font-size: 15px;
+            font-weight: 500;
+            text-align: left;
+            color: $clr-black;
+            font-family: "Manrope-Regular" !important;
+            padding-left: 5px;
+            padding-bottom: 8px;
+          }
+        }
+      }
+      .double-inline-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        .left-button {
+          margin-right: 4px;
+          padding: 12px;
+          border-radius: 8px;
+        }
+        .right-button {
+          margin-left: 4px;
+          padding: 12px;
+          border-radius: 8px;
+        }
+      }
+    }
+    }
+
+  &.typ-credit-card {
+    .cc-head {
+      max-width: 18.125rem;
+      margin: 0 auto 3.75rem;
+    }
+  }
+}
+
+@include mq-below($tablet-max) {
+  .lyt-credit-card {
+    .cc-body {
+      max-width: initial;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+
+
+    }
+    .cc-head {
+      margin-bottom: 2.18rem;
+    }
+
+    &.typ-credit-card {
+      padding-bottom: 3.125rem;
+
+      .cc-head {
+        padding: 0 2.5rem;
+        margin-bottom: 2.8125rem;
+      }
+
+      .cc-grid-item {
+        margin-bottom: 1.875rem;
+      }
+    }
+  }
+}
+
+

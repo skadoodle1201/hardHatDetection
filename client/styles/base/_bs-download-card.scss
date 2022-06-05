@@ -1,0 +1,41 @@
+//bs-download-card
+.bs-download-card {
+  background-color: $clr-pallet-9;
+  border-radius: 1rem;
+  padding: 1.8rem 1.6rem 2rem 1.6rem;
+  text-align: center;
+
+  .dc-title {
+    @include font-source-sans(1rem, 1.75rem, $font-regular, $clr-white, capitalize);
+    font-family: "Manrope-Bold";
+  }
+
+  .info-text {
+    @include font-source-sans(0.875rem, 1.375rem, $font-regular, $clr-white, capitalize);
+    font-family: "Manrope-SemiBold";
+  }
+
+  .dc-info {
+    margin-bottom: 1.25rem;
+
+    .info-text {
+      margin-bottom: 0.25rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .btn-solid {
+    background-color: #ff0249;
+
+    &:hover {
+      background-color: $clr-pallet-5;
+    }
+  }
+
+  .img-wrap {
+    margin: 0.625rem 0 1.125rem 0;
+  }
+}

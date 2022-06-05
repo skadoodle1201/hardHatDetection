@@ -1,0 +1,60 @@
+//bs-modal
+.bs-modal {
+  background-color: $clr-white;
+  width: 50rem;
+  padding: 2rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 100vh;
+  overflow-y: auto;
+
+  .modal-close {
+    font-size: 1.4rem;
+    color: $clr-bullets;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+
+    .MuiSvgIcon-root {
+      width: 1.3rem;
+      height: 1.3rem;
+    }
+  }
+
+  &.typ-card {
+    width: 26.25rem;
+    padding: 0;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+@include mq-below($mobile) {
+  .bs-modal {
+    padding: 2rem 1.25rem;
+  }
+}
+
+@include mq-below($tablet-max) {
+  .bs-modal {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transform: translate(0, 0);
+    width: auto;
+
+    &.typ-card {
+      left: 50%;
+      top: 50%;
+      right: auto;
+      bottom: auto;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

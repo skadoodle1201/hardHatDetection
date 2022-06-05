@@ -1,0 +1,38 @@
+//bs-check-list
+.bs-check-list {
+  .cl-head {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.15rem;
+    border-bottom: 1px solid $clr-border;
+    align-items: center;
+  }
+
+  .title {
+    @include font-source-sans(1rem, 1.25rem, $font-md, $clr-pallet-15, capitalize);
+    font-family: $font-medium;
+  }
+
+  a {
+    @include font-source-sans(1rem, 1.25rem, $font-md, $clr-primary, capitalize);
+    font-family: $font-medium;
+  }
+
+  .chk-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid $clr-border;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    a {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+
+    strong {
+      font-family: manrope-bold !important;
+    }
+  }
+}

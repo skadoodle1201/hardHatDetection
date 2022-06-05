@@ -1,0 +1,53 @@
+//bs-alert
+.bs-alert {
+  background-color: $clr-pallet-9;
+  border-radius: 0.5rem;
+  padding: 0.93rem 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  max-width: 20.93rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+  top: -100%;
+  z-index: 10;
+
+  &.active {
+    top: 1.5rem;
+  }
+
+  .icon {
+    font-size: 1.875rem;
+  }
+
+  .icon-wrap {
+    margin-right: 1.5rem;
+  }
+
+  .a-title {
+    color: $clr-white;
+    font-size: 1rem;
+  }
+
+  .a-desc {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@include mq-below($mobile) {
+  .bs-alert {
+    left: 1rem;
+    right: 1rem;
+
+    &.active {
+      top: 1rem;
+    }
+
+    .icon-wrap {
+      margin-right: 0.9rem;
+    }
+  }
+}

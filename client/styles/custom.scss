@@ -1,0 +1,115 @@
+// base setup
+
+@import "base/variables";
+@import "base/mixin";
+@import "base/reset.local";
+
+// common
+
+@import "common/common.scss";
+
+// base
+
+@import "base/bs-header";
+@import "base/bs-banner";
+@import "base/bs-infography";
+@import "base/bs-footer";
+@import "base/bs-panel";
+@import "base/bs-form";
+@import "base/bs-menu";
+@import "base/btn";
+@import "base/bs-modal";
+@import "base/bs-info-text";
+@import "base/bs-icon-text";
+@import "base/bs-steps";
+@import "base/bs-checkbox";
+@import "base/bs-info";
+@import "base/bs-custom-modal";
+@import "base/bs-otp";
+@import "base/bs-otp-input";
+@import "base/bs-edit-form";
+@import "base/bs-modal-info";
+@import "base/bs-select-dropdown";
+@import "base/bs-select";
+@import "base/bs-drawer";
+@import "base/bs-loader";
+@import "base/bs-address";
+@import "base/bs-new-address";
+@import "base/bs-card";
+@import "base/bs-account-details";
+@import "base/bs-datalist";
+@import "base/bs-account-features";
+@import "base/bs-application-download";
+@import "base/bs-doc-list";
+@import "base/bs-check-list";
+@import "base/bs-card-slider";
+@import "base/bs-info-form";
+@import "base/bs-offer";
+@import "base/bs-consent";
+@import "base/bs-upload-card";
+@import "base/bs-upload-steps";
+@import "base/bs-date-picker";
+@import "base/bs-download-card";
+@import "base/bs-rating";
+@import "base/bs-card-media";
+@import "base/bs-info-card";
+@import "base/bs-advertise";
+@import "base/bs-alert";
+@import "base/bs-card-details";
+@import "base/bs-pan-details";
+@import "base/bs-review-info";
+@import "base/bs-user-profile";
+@import "base/bs-view-card";
+@import "base/bs-inline-block";
+
+// modules
+
+@import "modules/mod-chip";
+@import "modules/mod-promo-success";
+@import "modules/mod-list";
+@import "modules/mod-icon-text";
+@import "modules/mod-avatar";
+@import "modules/mod-info";
+@import "modules/mod-btn-check";
+@import "modules/mod-inline-icon";
+@import "modules/mod-info-text";
+@import "modules/mod-date";
+@import "modules/mod-btn-progress";
+@import "modules/mod-address";
+@import "modules/mod-progress";
+@import "modules/mod-info-title";
+@import "modules/mod-type";
+@import "modules/mod-checklist";
+
+// layout
+
+@import "layout/lyt-grid";
+@import "layout/lyt-overview";
+@import "layout/lyt-detail-form";
+@import "layout/lyt-no-service";
+@import "layout/lyt-address-details";
+@import "layout/lyt-address-list";
+@import "layout/lyt-questionaire";
+@import "layout/lyt-kyc";
+@import "layout/lyt-tnc";
+@import "layout/lyt-mpin";
+@import "layout/lyt-form";
+@import "layout/lyt-configure-card";
+@import "layout/lyt-offer-list";
+@import "layout/lyt-doc";
+@import "layout/lyt-doc-list";
+@import "layout/lyt-appointment";
+@import "layout/lyt-address-list-wrap";
+@import "layout/lyt-info-list";
+@import "layout/lyt-checklist";
+@import "layout/lyt-inner-container";
+@import "layout/lyt-nominee-detail";
+@import "layout/lyt-options";
+@import "layout/lyt-personal-detail";
+@import "layout/lyt.credit-card";
+
+//template
+
+@import "template/tpl-single-page";
+@import "template/tpl-progress-page";
+@import "template/tpl-overview";

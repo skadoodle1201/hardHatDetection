@@ -1,0 +1,7 @@
+//mod-type
+.mod-type {
+  @include font-source-sans(0.75rem, 0.875rem, 700, $clr-pallet-16, capitalize);
+  font-family: "Manrope-Bold";
+  margin-bottom: 0.5rem;
+  display: block;
+}

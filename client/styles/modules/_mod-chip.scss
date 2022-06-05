@@ -1,0 +1,15 @@
+//mod-chip
+
+.mod-chip {
+  &.MuiButtonBase-root {
+    border-color: $clr-pallet-1;
+
+    &:hover {
+      background-color: $clr-light-bg !important;
+    }
+  }
+
+  .MuiChip-label {
+    @include font-source-sans(0.8rem, 1rem, $font-regular, $clr-pallet-1, initial);
+  }
+}

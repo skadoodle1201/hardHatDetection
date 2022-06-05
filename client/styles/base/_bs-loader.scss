@@ -1,0 +1,31 @@
+//bs-loader
+.bs-loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $clr-white;
+
+  .loader-cont {
+    text-align: center;
+  }
+
+  .loader-img-wrap {
+    max-width: 3.125rem;
+    margin: 0 auto 3.75rem;
+  }
+
+  .text {
+    max-width: 8.75rem;
+    margin: 0 auto;
+  }
+
+  &.active {
+    display: flex;
+  }
+}

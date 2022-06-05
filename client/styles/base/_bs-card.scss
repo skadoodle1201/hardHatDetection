@@ -1,0 +1,13 @@
+//bs-card
+.bs-card {
+  background-color: $clr-white;
+  box-shadow: 3px 3px 18px 0 rgba(134, 134, 134, 0.16);
+  border-radius: 1rem;
+  padding: 2.5rem 3.35rem;
+}
+
+@include mq-below($mobile) {
+  .bs-card {
+    padding: 2.3rem 1.6rem;
+  }
+}
