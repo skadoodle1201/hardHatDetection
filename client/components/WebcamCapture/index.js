@@ -11,17 +11,17 @@ const videoConstraints = {
 };
 
 const WebcamCapture = (props) => {
-	const { captureDoc, webcamToggler } = props;
+	const { captureDoc, webcamToggler, uploadCapturedDoc } = props;
 
 	const [takePhotoBtnDisable, setTakePhotoBtnDisable] = useState(true);
 
 	const webcamRef = useRef(null);
 
-	// const capture = useCallback(() => {
-	// 	const imageSrc = webcamRef.current.getScreenshot();
-	// 	uploadCapturedDoc(imageSrc, captureDoc);
-	// 	webcamToggler();
-	// }, [webcamRef]);
+	const capture = useCallback(() => {
+		const imageSrc = webcamRef.current.getScreenshot();
+		uploadCapturedDoc(imageSrc, captureDoc);
+		webcamToggler();
+	}, [webcamRef]);
 
 	useEffect(() => {
 		document.body.classList.add("lock-scroll");
@@ -52,7 +52,7 @@ const WebcamCapture = (props) => {
 					<Button
 						className="btn"
 						variant="contained"
-						// onClick={capture}
+						onClick={capture}
 						disabled={takePhotoBtnDisable}
 					>
 						Take Photo
