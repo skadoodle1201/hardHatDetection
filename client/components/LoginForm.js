@@ -1,6 +1,7 @@
 import { useFormik } from "formik";
 import { useRouter } from "next/Router";
 import { Button, TextField } from "@mui/material";
+import axios from "axios";
 
 const LoginForm = () => {
 	const router = useRouter();
@@ -29,8 +30,16 @@ const LoginForm = () => {
 			return errors;
 		},
 
-		onSubmit: (values) => {
-			alert(JSON.stringify(values, null, 2));
+		onSubmit: async (values) => {
+			const dataPayload = {
+				email: values.email,
+				password: values.password,
+			};
+			const response = await axios.post(
+				"http://localhost:5000/register",
+				dataPayload
+			);
+			console.log(response);
 		},
 	});
 	const handleSignUp = () => {

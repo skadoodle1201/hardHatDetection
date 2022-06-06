@@ -8,11 +8,6 @@ import LoginForm from "../components/LoginForm";
 import Image from "next/image";
 
 export default function Home() {
-	useEffect(() => {
-		axios.get(`http://127.0.0.1:8000/api/users/`).then((res) => {
-			console.log(res.data);
-		});
-	});
 	return (
 		<>
 			<Head>
